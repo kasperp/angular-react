@@ -1,8 +1,8 @@
 #angular-react
 
-[React.js](http://facebook.github.io/react/) library can be used as a view component atop other JavaScript frameworks. Based on [NgReact](https://github.com/davidchang/ngReact) angular-react is a angular directive (called `react-component`) and an angular service (called `reactDirective`) for generating directives that allows React Components to be used from [AngularJS](https://angularjs.org/) applications.
+The [React.js](http://facebook.github.io/react/) library can be used as a view component in web applications. Based on [NgReact](https://github.com/davidchang/ngReact) angular-react is a angular directive (called `react-component`) and an service (called `reactDirective`) that allows React Components to be used in [AngularJS](https://angularjs.org/) applications.
 
-**angular-react** can be used in existing angular applications and can replace part of views with React components. React components can be registered as angular services allowing React components to use exiting angular services. **angular-react** is meant to be used in existing angular applications, to replace performance critical view areas (e.g. large tables build with ng-repeat) or used to build new areas that can benefit from React's functional programming model.
+**angular-react** can be used in existing angular applications, to replace areas of views with react components.
 
 ## reactComponent directive
 The reactComponent directive allows you to add React Components to your angular views.
@@ -42,7 +42,7 @@ The component can be used in an angular view using react-component like this.
 ```
 
 ## reactDirective service
-With the `reactDirective` service you can create named directives based on React components. The service function the name of the React component as argument.
+With the `reactDirective` service you can create named directives backed by React components. The service takes the name of the React component as argument.
 
 ```javascript
 app.directive( 'hello', function( reactDirective ) {
@@ -61,7 +61,7 @@ This creates a directive that can be used like this.
 ```
 
 ## Reusing angular services
-In an existing angular application you'll often build services or filters that you wish to use from your React component. You can use angular's dependency injector to get hold of those.
+In an existing angular application you'll often have existing services or filters that you wish to use from your React component. You can use angular's dependency injector to get hold of those.
 
 ```javascript
 app.filter( 'hero', function() {
