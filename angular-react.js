@@ -125,7 +125,7 @@
   };
 
   angular.module( 'react', [] )
-    .directive( 'reactComponent', reactComponent )
-    .factory( 'reactDirective', reactDirectiveFactory );
+    .directive( 'reactComponent', ['$timeout', '$injector', reactComponent ] )
+    .factory( 'reactDirective', ['$injector', reactDirectiveFactory ] );
 
 } )( window.React, window.angular );
