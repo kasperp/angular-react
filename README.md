@@ -1,4 +1,4 @@
-*This repo has been merged into https://github.com/davidchang/ngReact, please refer go there*
+*This repo has been merged into https://github.com/davidchang/ngReact, please go there instead*
 
 #angular-react
 
