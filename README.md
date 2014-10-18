@@ -1,3 +1,5 @@
+*This repo has been merged into https://github.com/davidchang/ngReact, please refer go there*
+
 #angular-react
 
 The [React.js](http://facebook.github.io/react/) library can be used as a view component in web applications. Based on [NgReact](https://github.com/davidchang/ngReact) angular-react is a angular directive (called `react-component`) and an service (called `reactDirective`) that allows React Components to be used in [AngularJS](https://angularjs.org/) applications.
